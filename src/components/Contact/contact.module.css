@@ -1,0 +1,38 @@
+.container {
+    border: 2px solid rgb(206, 149, 28);
+    border-radius: 5%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.name {}
+
+.number {}
+
+.data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.iconContact {
+    padding-right: 5px;
+    color: rgb(206, 149, 28);
+}
+
+.btn {
+    padding: 10px 15px;
+    background-color: transparent;
+    color: rgb(206, 149, 28);
+    border: 2px solid rgb(206, 149, 28);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(206, 149, 28);
+    color: white;
+    border: 2px solid white;
+}

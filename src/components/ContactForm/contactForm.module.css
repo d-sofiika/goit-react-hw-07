@@ -1,0 +1,52 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(206, 149, 28);
+    padding: 15px;
+    border-radius: 5%;
+
+}
+
+.formGroup {
+    margin-bottom: 10px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+}
+
+.buttonGroup {
+    margin-top: 20px;
+}
+
+.label {
+    margin-bottom: 5px;
+}
+
+.input {
+
+    padding: 8px;
+    margin-bottom: 5px;
+}
+
+.input:hover {}
+
+.message {
+    color: red;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.btn {
+    padding: 10px 15px;
+    background-color: transparent;
+    color: rgb(206, 149, 28);
+    border: 2px solid rgb(206, 149, 28);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(206, 149, 28);
+    color: white;
+    border: 2px solid white;
+}
