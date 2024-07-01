@@ -2,27 +2,21 @@
 import { useId, useState } from "react";
 /*import * as Yup from "yup";*/
 
-import { nanoid } from 'nanoid'
 import css from "./contactForm.module.css"
 import { useDispatch } from "react-redux";
-import { addContact } from "../../redux/contactSlice";
+import { addContact } from "../../redux/contactsOps";
 
 const ContactForm = () => {
   
   const dispatch = useDispatch();
-const addContacts = (newContact) => {
- dispatch(addContact(newContact))
-  }
+
 const [name, setName] = useState('');
   const [number, setNumber] = useState('');
 
   const handleSubmit = (event) => {
-          event.preventDefault();
-        addContacts({
-            id: nanoid(),
-            name: name,
-                number: number
-        })
+    event.preventDefault();
+   
+          dispatch(addContact({ name, number }));
        setName('');
     setNumber('');
     }
