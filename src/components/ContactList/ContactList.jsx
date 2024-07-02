@@ -15,6 +15,7 @@ const ContactList = () => {
     dispatch(fetchContact());
   }, [dispatch]);
 
+
     if (!filteredContacts || filteredContacts.length === 0) {
     return <p>No contacts found</p>;
   }
